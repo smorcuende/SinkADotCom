@@ -18,9 +18,7 @@ public class SimpleDotCom {
         String result = "Miss";
 
         for (int cell : locationCells){
-
-            // Comparación de respuesta con casilla del array
-            if (guess == cell) { // si acierta
+            if (guess == cell) {
 
                 result = "Hit";
 
@@ -31,7 +29,6 @@ public class SimpleDotCom {
             }
         }
 
-        // Si ya ha acertado 3 veces: barco hundido
         if (numOfHits == locationCells.length) {
 
             result = "Kill";
@@ -42,8 +39,4 @@ public class SimpleDotCom {
 
         return result;
     }
-
-
-
-
 }
